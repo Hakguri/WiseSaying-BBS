@@ -34,8 +34,7 @@ try {
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4"
         ]
     );
-    echo "<pre>DB 연결 성공: $db_host:$db_port/$db_name ($db_user)</pre>";
-    exit;
+
 } catch (PDOException $e) {
     die('데이터베이스 연결에 실패했습니다: ' . $e->getMessage());
 }
