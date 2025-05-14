@@ -1,9 +1,6 @@
 <?php
 require_once 'config/database.php';
 
-echo "<pre>DB_HOST: $db_host, DB_PORT: $db_port, DB_NAME: $db_name, DB_USER: $db_user</pre>";
-exit;
-
 // 페이지네이션 설정
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $per_page = 10;
